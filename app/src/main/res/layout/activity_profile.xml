@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="200dp">
+
+
+        <Button
+            android:id="@+id/btn_title_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CERRAR SESION"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_enabled"
+            android:onClick="onClick"/>
+
+    </LinearLayout >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <View
+            android:id="@+id/bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/bottom_nav_home"
+            android:background="?android:attr/dividerHorizontal"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_home"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="start"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/selector_bottom_nav"
+            app:itemTextColor="@drawable/selector_bottom_nav"
+            android:background="@color/background"
+            app:menu="@menu/bottom_navigation_menu" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

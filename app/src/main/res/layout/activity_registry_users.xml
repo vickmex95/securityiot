@@ -1,0 +1,143 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/btn_back_action"
+            android:layout_width="40dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="8dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="88dp"
+            style="@style/PrincipalLblTittle"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relLayout1"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_registration"
+                    android:textSize="25sp"
+                    android:textColor="@color/Black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/textEmailReg"/>
+
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/prompt_email"
+                    android:layout_below="@+id/textEmailReg"/>
+
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    android:hint="@string/password"
+                    android:layout_below="@+id/input_email"/>
+
+                <EditText
+                    android:id="@+id/input_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    android:hint="@string/confirm_password"
+                    android:layout_below="@+id/input_password"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tipo_residuo_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded_input_field"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingTop="10dp"
+                    android:layout_below="@id/input_confirm_password">
+
+                    <Spinner
+                        android:id="@+id/roles"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:hint="Selecciona un rol"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName|textCapWords"
+                        android:lines="1"
+                        android:maxLength="50"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="normal"
+                        android:textColor="@color/txt_edit_light_gray"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="8sp"
+                        android:textColorHint="@color/hint_color" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_below="@+id/input_confirm_password"
+                    android:text="@string/register"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_button_enabled"/>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

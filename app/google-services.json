@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "267248969337",
+    "firebase_url": "https://securityiot-b0df5.firebaseio.com",
+    "project_id": "securityiot-b0df5",
+    "storage_bucket": "securityiot-b0df5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267248969337:android:e3dba42b418a8de946d6a8",
+        "android_client_info": {
+          "package_name": "com.securityiot.securityiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267248969337-4mg0sfvc8v68ikgp31tkgl80p48sh57q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC67wAdZGAUwS1qiS1Ow8X64t4I94gOrwk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267248969337-4mg0sfvc8v68ikgp31tkgl80p48sh57q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

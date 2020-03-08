@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">SecurityIoT</string>
+    <string name="ingresa_codigo_txt">Ingresa tu código de evento:</string>
+    <string name="failed">Ocurrio un error, intentelo de nuevo más tarde.</string>
+    <string name="success">Acceso correcto.</string>
+    <string name="success_event">Evento agregado.</string>
+    <string name="event_name">Nombre de evento:</string>
+    <string name="event_name_placeholder">Escribe el nombre del evento:</string>
+    <string name="update_event">Evento actualizado con éxito.</string>
+    <string name="delete_event">Evento borrado con éxito.</string>
+    <string name="success_user">Usuario registrado con éxito.</string>
+    <string name="home">Inicio</string>
+    <string name="profile">Perfil</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Ingresar</string>
+    <string name="action_sign_out">Cerrar Sesión</string>
+    <string name="error_invalid_email">El correo eléctronico no es valido</string>
+    <string name="error_invalid_password">La contraseña es muy corta</string>
+    <string name="error_incorrect_password">La contraseña es incorresta</string>
+    <string name="error_field_required">El campo es requerido</string>
+    <string name="resend_verification_email">Resend Verification Email</string>
+    <string name="forgot_password">Olvide mi contraseña</string>
+    <string name="register">Registrar</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="password">Contraseña</string>
+    <string name="tabian_consulting_logo">Tabian Consulting Logo</string>
+    <string name="email_registration">Registro Usuario</string>
+    <string name="email">Correo eléctronico</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="join_guess">Entrar como visitante</string>
+    <string name="resident_name">Nombre del residente:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

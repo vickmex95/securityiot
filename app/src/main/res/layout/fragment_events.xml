@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".ui.VisitFragment">
+
+
+    <EditText
+        android:id="@+id/edt_event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="aábcdeéfghiíjklmnñoópqrstuúüvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚÜVWXYZ "
+        android:hint="@string/event_name_placeholder"
+        android:textColor="#c9c9c9"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName|textNoSuggestions|textCapWords"
+        android:maxLength="50"
+        android:textSize="16sp"
+        android:ems="10"
+        android:singleLine="true"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:letterSpacing="0.01"
+        android:lineSpacingExtra="8sp" />
+    <Button
+        android:id="@+id/btn_event_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/edt_event_name"
+        android:background="@drawable/bg_button_disabled"
+        android:text="AGREGAR EVENTO" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
